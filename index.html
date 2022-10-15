@@ -14,20 +14,26 @@
 
     <div class="game">
       <div class="choices">
-        <button id="rock">✊</button>
-        <button id="paper">✋</button>
-        <button id="scissors">✌</button>
+        <button class="choice" id="rock">✊</button>
+        <button class="choice" id="paper">✋</button>
+        <button class="choice" id="scissors">✌</button>
       </div>
 
       <div class="scoreboard">
-        <div class="score">
-          <span id="player_score">0</span><span>-</span><span id="computer_score">0</span>
-        </div>
+        <div class="choice-emoji" id="player_choice"></div>
+
         <div class="log">
+          <div class="score">
+            <span id="player_score">0</span><span>-</span><span id="computer_score">0</span>
+          </div>
           <span id="log_message">Select a choice to begin</span>
         </div>
-      </div>
 
+        <div class="choice-emoji" id="computer_choice"></div>
+      </div>
+      <div>
+        <button id="restart">Restart</button>
+      </div>
       <script src="script.js"></script>
     </div>
   </body>
